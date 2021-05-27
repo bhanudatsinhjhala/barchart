@@ -1,0 +1,71 @@
+body{
+  background-color: #708090;
+}
+
+.main{
+  width: 90vw;
+  height: 90vh;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans';
+}
+.main .container {
+  height: 560px;
+  width: 900px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+  align-self: center;
+  position: relative;
+}
+.main .container #title {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.main .container .visHolder {
+  position: absolute;
+  top: 6em;
+}
+.bars{
+  fill: lightblue;
+  display: inline-block;
+  margin-bottom:50px;
+}
+.bars:hover{
+  fill:grey;
+}
+.xAxis path{
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+
+.yAxis path{
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+.overlay {
+  position: absolute;
+  background: #fff;
+  pointer-events: none;
+}
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  font: 12px;
+  background: lightsteelblue;
+  box-shadow: 1px 1px 10px;
+  border-radius: 2px;
+  pointer-events: none;
+}
